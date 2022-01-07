@@ -5,8 +5,33 @@ Capacitor plugin which manages the media session and fire media events for Andro
 ## Install
 
 ```bash
-npm install capacitor-media-session
+yarn add @videodock/capacitor-media-session
 npx cap sync
+```
+
+## Usage
+
+All API methods are exposed on the `CapacitorMediaSession` plugin. Import the plugin like so:
+
+```js
+import { CapacitorMediaSession } from '@videodock/capacitor-media-session';
+```
+
+You can now call any API method:
+
+```js
+// call when player gets mounted
+CapacitorMediaSession.initMediaSession(mediaState);
+```
+
+```js
+// call when player gets unmounted/stopped
+CapacitorMediaSession.releaseMediaSession();
+```
+
+```js
+// call when media state changes (one of the MediaState properties) 
+CapacitorMediaSession.releaseMediaSession(mediaState);
 ```
 
 ## API
