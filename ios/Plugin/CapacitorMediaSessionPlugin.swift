@@ -9,10 +9,15 @@ import Capacitor
 public class CapacitorMediaSessionPlugin: CAPPlugin {
     private let implementation = CapacitorMediaSession()
 
-    @objc func echo(_ call: CAPPluginCall) {
-        let value = call.getString("value") ?? ""
-        call.resolve([
-            "value": implementation.echo(value)
-        ])
+    @objc func initMediaSession(_ call: CAPPluginCall) {
+        call.unimplemented();
+    }
+    
+    @objc func releaseMediaSession(_ call: CAPPluginCall) {
+        call.unimplemented();
+    }
+    
+    @objc func setMediaState(_ call: CAPPluginCall) {
+        call.unimplemented();
     }
 }
