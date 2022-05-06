@@ -31,7 +31,7 @@ CapacitorMediaSession.releaseMediaSession();
 
 ```js
 // call when media state changes (one of the MediaState properties) 
-CapacitorMediaSession.releaseMediaSession(mediaState);
+CapacitorMediaSession.setMediaState(mediaState);
 ```
 
 ## API
