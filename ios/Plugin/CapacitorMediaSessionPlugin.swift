@@ -7,10 +7,21 @@ import Capacitor
  */
 @objc(CapacitorMediaSessionPlugin)
 public class CapacitorMediaSessionPlugin: CAPPlugin {
-    private let implementation = CapacitorMediaSession()
+    private let implementation;
 
     @objc func initMediaSession(_ call: CAPPluginCall) {
-        call.unimplemented();
+        implementation = NowPlayableBehavior()
+        
+        implementation.setNowPlayingMetadata(
+            NowPlayableStaticMetadata(
+                assetURL: URL.init(string: call.getString("test") ?? <#default value#>!),
+                mediaType: .video,
+                isLiveStream: <#T##Bool#>,
+                title: <#T##String#>,
+                artist: <#T##String?#>,
+                artwork: <#T##MPMediaItemArtwork?#>,
+                albumArtist: <#T##String?#>,
+                albumTitle: <#T##String?#>));
     }
     
     @objc func releaseMediaSession(_ call: CAPPluginCall) {
