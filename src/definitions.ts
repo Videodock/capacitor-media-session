@@ -9,7 +9,7 @@ export type MediaState = {
   position: number;
 }
 
-export type MediaSessionEventType = 'onPlay' | 'onPause' | 'onPausePlay' | 'onStop' | 'onNext' | 'onPrev' | 'onFastForward' | 'onRewind';
+export type MediaSessionEventType = 'onPlay' | 'onPause' | 'onPlayPause' | 'onStop' | 'onNext' | 'onPrev' | 'onFastForward' | 'onRewind';
 export type MediaSessionEvent = { eventName: MediaSessionEventType };
 export type MediaSessionListenerFunc = (event: MediaSessionEvent) => void;
 

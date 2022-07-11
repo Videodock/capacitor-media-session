@@ -137,6 +137,6 @@ addListener(eventName: 'mediaSessionEvent', listenerFunc: MediaSessionListenerFu
 
 #### MediaSessionEventType
 
-<code>'onPlay' | 'onPause' | 'onPausePlay' | 'onStop' | 'onNext' | 'onPrev' | 'onFastForward' | 'onRewind'</code>
+<code>'onPlay' | 'onPause' | 'onPlayPause' | 'onStop' | 'onNext' | 'onPrev' | 'onFastForward' | 'onRewind'</code>
 
 </docgen-api>
