@@ -1,6 +1,6 @@
 {
   "name": "@videodock/capacitor-media-session",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Capacitor plugin which manages the media session",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
