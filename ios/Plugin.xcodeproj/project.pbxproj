@@ -16,6 +16,11 @@
 		50ADFFA42020D75100D50D53 /* Capacitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50ADFFA52020D75100D50D53 /* Capacitor.framework */; };
 		50ADFFA82020EE4F00D50D53 /* CapacitorMediaSessionPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFFA72020EE4F00D50D53 /* CapacitorMediaSessionPlugin.m */; };
 		50E1A94820377CB70090CE1A /* CapacitorMediaSessionPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E1A94720377CB70090CE1A /* CapacitorMediaSessionPlugin.swift */; };
+		F421300327D00C73008046A0 /* NowPlayableMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4212FFF27D00C73008046A0 /* NowPlayableMetadata.swift */; };
+		F421300427D00C73008046A0 /* NowPlayableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F421300027D00C73008046A0 /* NowPlayableError.swift */; };
+		F421300527D00C73008046A0 /* NowPlayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F421300127D00C73008046A0 /* NowPlayable.swift */; };
+		F421300627D00C74008046A0 /* NowPlayableCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = F421300227D00C73008046A0 /* NowPlayableCommand.swift */; };
+		F421300827D00C8F008046A0 /* NowPlayableBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = F421300727D00C8F008046A0 /* NowPlayableBehavior.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +48,11 @@
 		5E23F77F099397094342571A /* Pods-Plugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plugin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Plugin/Pods-Plugin.debug.xcconfig"; sourceTree = "<group>"; };
 		91781294A431A2A7CC6EB714 /* Pods-Plugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plugin.release.xcconfig"; path = "Pods/Target Support Files/Pods-Plugin/Pods-Plugin.release.xcconfig"; sourceTree = "<group>"; };
 		96ED1B6440D6672E406C8D19 /* Pods-PluginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PluginTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PluginTests/Pods-PluginTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F4212FFF27D00C73008046A0 /* NowPlayableMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowPlayableMetadata.swift; sourceTree = "<group>"; };
+		F421300027D00C73008046A0 /* NowPlayableError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowPlayableError.swift; sourceTree = "<group>"; };
+		F421300127D00C73008046A0 /* NowPlayable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowPlayable.swift; sourceTree = "<group>"; };
+		F421300227D00C73008046A0 /* NowPlayableCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowPlayableCommand.swift; sourceTree = "<group>"; };
+		F421300727D00C8F008046A0 /* NowPlayableBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayableBehavior.swift; sourceTree = "<group>"; };
 		F65BB2953ECE002E1EF3E424 /* Pods-PluginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PluginTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PluginTests/Pods-PluginTests.release.xcconfig"; sourceTree = "<group>"; };
 		F6753A823D3815DB436415E3 /* Pods_PluginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PluginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -92,6 +102,11 @@
 		50ADFF8A201F53D600D50D53 /* Plugin */ = {
 			isa = PBXGroup;
 			children = (
+				F421300127D00C73008046A0 /* NowPlayable.swift */,
+				F421300227D00C73008046A0 /* NowPlayableCommand.swift */,
+				F421300027D00C73008046A0 /* NowPlayableError.swift */,
+				F4212FFF27D00C73008046A0 /* NowPlayableMetadata.swift */,
+				F421300727D00C8F008046A0 /* NowPlayableBehavior.swift */,
 				50E1A94720377CB70090CE1A /* CapacitorMediaSessionPlugin.swift */,
 				2F98D68124C9AAE400613A4C /* CapacitorMediaSession.swift */,
 				50ADFF8B201F53D600D50D53 /* CapacitorMediaSessionPlugin.h */,
@@ -306,9 +321,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F421300527D00C73008046A0 /* NowPlayable.swift in Sources */,
+				F421300627D00C74008046A0 /* NowPlayableCommand.swift in Sources */,
+				F421300827D00C8F008046A0 /* NowPlayableBehavior.swift in Sources */,
 				50E1A94820377CB70090CE1A /* CapacitorMediaSessionPlugin.swift in Sources */,
 				2F98D68224C9AAE500613A4C /* CapacitorMediaSession.swift in Sources */,
+				F421300427D00C73008046A0 /* NowPlayableError.swift in Sources */,
 				50ADFFA82020EE4F00D50D53 /* CapacitorMediaSessionPlugin.m in Sources */,
+				F421300327D00C73008046A0 /* NowPlayableMetadata.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
